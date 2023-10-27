@@ -3,6 +3,6 @@ RUN pip install django==4.2.6
 
 COPY . .
 
-RUN python manage.py migrate
+RUN python3 manage.py migrate
 
-CMD ["python","manage.py","runserver","0.0.0.0:8001"]
+CMD ["python3","manage.py","runserver","0.0.0.0:8001"]
